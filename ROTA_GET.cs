@@ -9,10 +9,8 @@ using bibliotecaPositivo.model;
 namespace bibliotecaPositivo;
 public static class ROTA_GET
 {
-    
     public static void MapGetRoutes(this WebApplication app)
     {
-        // Definindo uma lista de livros como exemplo
         var livros = new List<Livro>
         {
             new Livro { Id = 1, Titulo = "Harry Potter e a Pedra Filosofal", Autor = "J.K. Rowling", AnoPublicacao = 1997 },
@@ -25,7 +23,6 @@ public static class ROTA_GET
          
         };
 
-        // Definindo as rotas GET
     {
         app.MapGet("/livros", () =>
         {
